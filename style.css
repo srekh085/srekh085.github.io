@@ -3,14 +3,22 @@
     margin: 0;
 }
 .header{
-    height: 20vh;
+/*
+    height: fit-content;
     width: 100%; 
+*/
+    display: block;
     text-align: center;
     background-color: #2d302e;
 }
 .image{
-    height: 100%;
-    width: auto;
+/*    height: auto;*/
+    width: 30%;
+}
+.imageblock .image{
+    height:auto;
+    width: 100%;
+    box-shadow: 0 3px 10px 0 rgb(45, 48, 46, 0.15);
 }
 .title{
     font-weight: 700;
@@ -25,11 +33,10 @@
     color: #2d302e;
 }
 .imageblock{
-    height: 60%;
-    width: fit-content;
+    width: 60%;
     text-align: center;
+    display: block;
     margin: 0 auto;
-    box-shadow: 0 3px 10px 0 rgb(45, 48, 46, 0.15);
 }
 .formContainer{
     width: 60%;
