@@ -15,17 +15,21 @@
 .title{
     font-weight: 700;
     font-size: 4vh;
-    margin: 2%;
+    padding: 2%;
 }
 .container{
     width: 100%;
     height: auto;
     text-align: center;
+    background-color: #F6F6F8;
+    color: #2d302e;
 }
 .imageblock{
     height: 60%;
-    width: auto;
+    width: fit-content;
     text-align: center;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px 0 rgb(45, 48, 46, 0.15);
 }
 .formContainer{
     width: 60%;
@@ -40,7 +44,7 @@
     margin: 0 auto;
 }
 .section{
-    margin: 2% 0 2% 0;
+    padding: 2% 0 2% 0;
 }
 .footer{
     background-color: #2d302e;
@@ -63,7 +67,7 @@
 .likert{
     list-style: none;
     text-align: center;
-    margin-top: 1%;
+    padding-top: 1%;
 }
 .likert li{
     display: inline;
