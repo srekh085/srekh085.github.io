@@ -4,18 +4,18 @@
     </head>
     <body>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <div class="header">
+        <header class="header">
             <a href="https://www.ign.com/ca"><img src="images/transparent_logo_ign.png" class="image"></a>
-        </div>
+        </header>
         <div class="container">
             <p class="title">Help us improve your Experience!</p>
             <div class="formContainer">
+                <div class="imageblock">
+                            <a href="https://www.ign.com/ca"><img src="images/home_ign.png" class="image"></a>
+                </div>
                 <form name="lab1_form" class="form">
                     <div class="section">
                         <p class="form-text" class="formText">How would you rate the information organization on the homepage? (In picture)</p>
-                        <div class="imageblock">
-                            <a href="https://www.ign.com/ca"><img src="images/home_ign.png" class="image"></a>
-                        </div>
                             <ul class="likert">
                                 <li>Bad Organization</li>
                                 <li><input type="radio" name="guilty" value="1" /></li>
@@ -29,7 +29,7 @@
                     
                      <div class="section">
                         <label for="sel1" class="formText">What do you spend most of your time on?</label><br>
-                        <select name="cars" size="1" id="sel1" class="text">
+                        <select name="cars" size="1" id="sel1" class="text" style="font-size: 2vh;">
                             <option value="volvo">Games</option>
                             <option value="saab">Movies</option>
                             <option value="fiat">Shows</option>
@@ -39,12 +39,14 @@
                     
                     <div class="section">
                         <label for="selMult" class="formText">What do you visit IGN to get news for?</label><br>
-                        <select name="cars" size="4" id="selMult" multiple class="text">
-                            <option value="volvo">Games</option>
-                            <option value="saab">Movies</option>
-                            <option value="fiat">Shows</option>
-                            <option value="audi">Technology</option>
-                        </select>
+                        <input type="checkbox" id="opt1" name="vehicle1" value="Bike">
+                        <label for="opt1" style="font-weight: 300;">Games</label><br>
+                        <input type="checkbox" id="opt2" name="vehicle1" value="Bike">
+                        <label for="opt2" style="font-weight: 300;">Movies</label><br>
+                        <input type="checkbox" id="opt2" name="vehicle1" value="Bike">
+                        <label for="opt3" style="font-weight: 300;">Shows</label><br>
+                        <input type="checkbox" id="opt4" name="vehicle1" value="Bike">
+                        <label for="opt4" style="font-weight: 300;">Technology</label><br>
                     </div>
                     
                     <div class="section">
@@ -64,17 +66,17 @@
                     
                     <div class="section">
                         <label for="commentBox">Additional Comments:</label><br>
-                        <textarea id="commentBox" class="text"></textarea>
+                        <textarea id="commentBox" class="text" ></textarea>
                     </div>
                     
-                    <div class="section"><input type="submit" value="Submit"></div>
+                    <div class="section" style="text-align: center;"><input type="button" value="Submit" class="submit-button"></div>
                     
                 </form>
             </div>
         </div>
-        <div class="footer">
+        <footer class="footer">
                 <a href="https://www.ign.com/ca"><img src="images/transparent_logo_ign.png" class="image"></a>
                 <p class="nametag">Sirjan Rekhi (Student ID: 300019180)</p>
-        </div>
+        </footer>
     </body>
 </html>
