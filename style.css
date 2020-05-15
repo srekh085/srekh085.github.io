@@ -1,0 +1,70 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+}
+body{
+    height=100%;
+    width=100%;
+}
+.header{
+    height: 20vh;
+    width: 100%; 
+    text-align: center;
+    background-color: #2d302e;
+    padding: 1% 0 1% 0;
+}
+.image{
+    height: 100%;
+    width: auto;
+}
+.title{
+    font-weight: 700;
+    font-size: 4vh;
+    margin: 2%;
+}
+.container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.imageblock{
+    height: 60vh;
+    width: 100%;
+}
+.formContainer{
+    width: inherit;
+}
+.form{
+    font-size: 3vh;
+    font-weight: 700;
+    width: inherit;
+    text-align: left;
+}
+.section{
+    margin: 2% 0 2% 0;
+    text-align: center;
+}
+.footer{
+    background-color: #2d302e;
+    height: 10vh;
+    text-align: center;
+    padding: 1% 0 1% 0;
+    width: 100%;
+}
+.footer .image{
+    height: 50%;
+    width: auto;
+    margin: 0;
+}
+.nametag{
+    color: white;
+    margin: 1% 0 0 0;
+    font-weight: 400;
+    font-size: 2vh;
+}
+.likert{
+    list-style: none;
+}
+.likert li{
+    display: inline;
+}
