@@ -26,8 +26,7 @@ footer{
   padding: 2%;
   text-align: center;
   bottom: 0;
-  position: absolute;
-  width: 100vw;
+  width: -webkit-fill-available;
 }
 .tab {
     overflow: hidden;

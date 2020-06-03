@@ -19,12 +19,20 @@ var products = [
 		price: 2.35
 	},
 	{
-		name: "salmon",
-		vegetarian: false,
+		name: "Green Bell Peppers",
+		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		tags: ["Organic", "Gluten-Free"],
-		price: 10.00
+		tags: ["Vegetarian", "Organic", "Gluten-Free"],
+		price: 3.25
+    },
+	{
+		name: "Sour Dough Bread",
+		vegetarian: true,
+		glutenFree: false,
+		organic: false,
+		tags: ["Vegetarian"],
+		price: 6.00
     },
 	{
 		name: "Chicken",
@@ -41,40 +49,8 @@ var products = [
 		organic: false,
 		tags: ["Organic"],
 		price: 8.00
-    },
-    {
-		name: "Kobe Beef",
-		vegetarian: false,
-		glutenFree: true,
-		organic: true,
-		tags: ["Organic", "Gluten-Free"],
-		price: 100.00
-    },
-    {
-		name: "Sour Dough Bread",
-		vegetarian: true,
-		glutenFree: false,
-		organic: false,
-		tags: ["Vegetarian"],
-		price: 6.00
-    },
-    {
-		name: "Green Bell Peppers",
-		vegetarian: true,
-		glutenFree: true,
-		organic: true,
-		tags: ["Vegetarian", "Organic", "Gluten-Free"],
-		price: 3.25
-    },
-    {
-		name: "Frozen Margherita Pizza",
-		vegetarian: true,
-		glutenFree: false,
-		organic: false,
-		tags: ["Vegetarian"],
-		price: 12.00
-    },
-    {
+	},
+	{
 		name: "Prepared Salad",
 		vegetarian: true,
 		glutenFree: true,
@@ -89,6 +65,30 @@ var products = [
 		organic: true,
 		tags: ["Vegetarian", "Organic", "Gluten-Free"],
 		price: 8.00
+    },
+	{
+		name: "salmon",
+		vegetarian: false,
+		glutenFree: true,
+		organic: true,
+		tags: ["Organic", "Gluten-Free"],
+		price: 10.00
+	},
+	{
+		name: "Frozen Margherita Pizza",
+		vegetarian: true,
+		glutenFree: false,
+		organic: false,
+		tags: ["Vegetarian"],
+		price: 12.00
+    },
+    {
+		name: "Kobe Beef",
+		vegetarian: false,
+		glutenFree: true,
+		organic: true,
+		tags: ["Organic", "Gluten-Free"],
+		price: 100.00
     }
 ];
 	
@@ -106,16 +106,22 @@ function restrictListProducts(prods, restriction) {
 	
 	for (let i=0; i<prods.length; i+=1) {
 		let flag = true;
+		if(restriction.includes("None")){
+			product_names.push(prods[i]);
+			continue;	
+		}
 		for(let j=0; j<restriction.length; j+=1){
-			if(!prods[i].tags.includes(restriction[j])){
-				flag=false;
-				break;
+				
+				if(!prods[i].tags.includes(restriction[j])){
+					flag=false;
+					break;
+				}
+			}
+			if(flag){
+				product_names.push(prods[i]);
 			}
 		}
-		if(flag){
-			product_names.push(prods[i].name);
-		}
-	}
+	console.log(product_names);
 	return product_names;
 }
 

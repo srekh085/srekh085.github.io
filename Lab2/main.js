@@ -71,19 +71,22 @@ function populateListProductChoices(slct2) {
 		
 	for (i = 0; i < optionArray.length; i++) {
 			
-		var productName = optionArray[i];
+		var product = optionArray[i];
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
 		checkbox.name = "product";
-		checkbox.value = productName;
-		checkbox.label = products[i].price;
+		checkbox.value = product.name;
+		checkbox.price = product.price;
 		s2.appendChild(checkbox);
 		
 		// create a label for the checkbox, and also add in HTML DOM
 		var label = document.createElement('label')
-		label.htmlFor = productName;
-		label.appendChild(document.createTextNode(productName));
+		label.htmlFor = product.name;
+		label.appendChild(document.createTextNode(product.name));
+		label.appendChild(document.createElement("br"));
+		label.appendChild(document.createTextNode(" Price: $"+product.price));
+		label.appendChild(document.createElement("br"));
 		s2.appendChild(label);
 		
 		// create a breakline node and add in HTML DOM
@@ -107,17 +110,21 @@ function selectedItems(){
 	var para = document.createElement("P");
 	para.innerHTML = "You selected : ";
 	para.appendChild(document.createElement("br"));
+	para.appendChild(document.createElement("br"));
 	for (i = 0; i < ele.length; i++) { 
 		if (ele[i].checked) {
 			para.appendChild(document.createTextNode(ele[i].value));
 			para.appendChild(document.createElement("br"));
-			para.appendChild(document.createTextNode(ele[i].price));
+			para.appendChild(document.createTextNode(" Price: $"+ele[i].price));
+			para.appendChild(document.createElement("br"));
+			para.appendChild(document.createElement("br"));
 			chosenProducts.push(ele[i].value);
 		}
 	}
 		
 	// add paragraph and total price
 	c.appendChild(para);
+	para.appendChild(document.createElement("br"));
 	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts)));
 		
 }
