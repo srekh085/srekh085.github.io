@@ -145,12 +145,10 @@ function openPage(pageName, elmnt, color) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = "";
     }
-
+    document.getElementById(elmnt).style.background = color;
     // Show the specific tab content
     document.getElementById(pageName).style.display = "block";
-
-    // Add the specific color to the button used to open the tab content
-    elmnt.style.backgroundColor = color;
+   
 }
 
 // Get the element with id="defaultOpen" and click on it
@@ -279,7 +277,7 @@ function fillCart() {
             finalCart.push(toShow[i]);
         }
     }
-    var div = document.getElementById("Cart");
+    var div = document.getElementById("inner");
     div.innerHTML = "Your Cart Items are: <br>";
     for (j = 0; j < finalCart.length; j += 1) {
         let product=finalCart[j];

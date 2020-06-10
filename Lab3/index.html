@@ -7,19 +7,18 @@
 
 <body>
     <header>
-        The Caring Grocers
+        <img src=Images/logo.png> The Caring Grocers Inc.
     </header>
-    <button class="tablink" onclick="openPage('Welcome', this, 'red')" id="defaultOpen">Welcome!</button>
-    <button class="tablink" onclick="openPage('Preference', this, 'green')">Your Preferences</button>
-    <button class="tablink" onclick="openPage('Offering', this, 'blue')">Our Offerings</button>
-    <button class="tablink" onclick="openPage('Cart', this, 'orange')">Your Cart</button>
+    <button class="tablink" onclick="openPage('Welcome', 'defaultOpen', 'red')" id="defaultOpen">Welcome!</button>
+    <button class="tablink" id="pref">Your Preferences</button>
+    <button class="tablink" id="offer">Our Offerings</button>
+    <button class="tablink" id="cart">Your Cart</button>
 
     <div id="Welcome" class="tabcontent">
         <h3>Welcome!</h3>
-        <p> We care about your preferences. Try us out: </p>
-        <div>
-
-        </div>
+        <p> We can sort our selection of products based on your preferences, so you have a more efficient and instant experience! </p>
+        <p>Give use a try:</p>
+        <a onclick="openPage('Preference','pref', 'red')"><button type="button">Start Ordering!</button></a>
     </div>
 
     <div id="Preference" class="tabcontent">
@@ -53,14 +52,14 @@
                     </li>
                 </ul>
             </div>
-            <a onclick="openPage('Offering', this, 'blue')"><button type="button" onclick="populateList()">Next</button></a>
+            <a onclick="openPage('Welcome', 'defaultOpen', 'red')"><button type="button">Home</button></a>
+            <a onclick="openPage('Offering', 'offer', 'red')"><button type="button" onclick="populateList()">Next</button></a>
         </form>
     </div>
 
     <div id="Offering" class="tabcontent">
-        <h3>Contact</h3>
-        <p>Get in touch, or swing by for a cup of coffee.</p>
-
+        <h3>Our Products, curated to your Preferences:</h3>
+        <p>Feel Free to go back and edit your Preferences!</p>
         <button class="accordion" onclick="accordionClick(0)">Vegetables</button>
         <div class="panel" id="veg">
              
@@ -100,12 +99,13 @@
         <div class="panel" id="pack">
              
         </div>
-        <a onclick="openPage('Cart', this, 'blue')"><button type="button" onclick="fillCart()">Next</button></a>
+        <a onclick="openPage('Preference', 'pref', 'red')"><button type="button">Preferences</button></a>
+        <a onclick="openPage('Cart', 'cart', 'red')"><button type="button" onclick="fillCart()">Next</button></a>
     </div>
 
     <div id="Cart" class="tabcontent">
-        <h3>About</h3>
-        <p>Who we are and what we do.</p>
+        <div id="inner"></div>
+        <a onclick="openPage('Offering', 'offer', 'red')"><button type="button">Edit Items</button></a>
     </div>
     <footer>
         Website by Sirjan Rekhi - 300019180
