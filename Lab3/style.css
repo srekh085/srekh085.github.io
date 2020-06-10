@@ -104,10 +104,11 @@ body, html {
     font-size: 6vh;
     font-weight: 700;
     color: white;
-    padding: 3%;
+    padding: 2%;
   }
   header img{
     height:auto;
-    width: 12%;
+    width: 8%;
     margin-right: 1%;
+    margin-top: -1%;
   }
