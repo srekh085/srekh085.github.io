@@ -1,6 +1,5 @@
 var toShow = [];
 var products = [
-
     {
         name: "Bagel",
         type: "Bakery",
@@ -120,14 +119,14 @@ var products = [
         price: 12.00
     },
     {
-        name: "Prawns",
-        type: "Sea Food",
+        name: "Milk 10L",
+        type: "Dairy",
         tags: ["Organic", "Gluten-Free"],
         price: 16.00
     },
     {
-        name: "Milk 10L",
-        type: "Dairy",
+        name: "Prawns",
+        type: "Sea Food",
         tags: ["Organic", "Gluten-Free"],
         price: 18.00
     }
