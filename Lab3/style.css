@@ -1,0 +1,95 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  /* Style tab links */
+  .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+  /* #Welcome {background-color: red;} */
+  #News {background-color: green;}
+  #Contact {background-color: blue;}
+  #About {background-color: orange;}
+
+  /*Accordion *****************************
+  /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  /*Preferences */
+  #Preference{
+      color: #444;
+  }
+  #chooser{
+    transition: 0.4s;
+    display: none;
+
+    }
+
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+   .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    color: black;
+  }
+  .card{
+      height: auto;
+      width: auto;
+      margin: 1%;
+      display: inline-block;
+      font-weight: 400;
+      font-size: 40px;
+      border-width: 3px;
+      border-color: #444;
+  }
+  .card img{
+      height: 50px;
+      width: 50px;
+  }
+  #Cart{
+      color: #444;
+      font-size: large;
+  }

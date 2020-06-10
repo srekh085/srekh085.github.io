@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <title>The Caring Grocers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        The Caring Grocers
+    </header>
+    <button class="tablink" onclick="openPage('Welcome', this, 'red')" id="defaultOpen">Welcome!</button>
+    <button class="tablink" onclick="openPage('Preference', this, 'green')">Your Preferences</button>
+    <button class="tablink" onclick="openPage('Offering', this, 'blue')">Our Offerings</button>
+    <button class="tablink" onclick="openPage('Cart', this, 'orange')">Your Cart</button>
+
+    <div id="Welcome" class="tabcontent">
+        <h3>Welcome!</h3>
+        <p> We care about your preferences. Try us out: </p>
+        <div>
+
+        </div>
+    </div>
+
+    <div id="Preference" class="tabcontent">
+        <h3>Preferences</h3>
+        <p>Help us sort out our products to best suit your needs:</p>
+        <form action="">
+            Would you like to add any Dietary preferences?
+            <ul onchange="showPrefs()">
+                <li>Yes <input type="radio" name="preFlag"/></li>
+                <li>No <input type="radio" name="preFlag"/></li>
+            </ul>
+            <div id="chooser">
+                <ul>
+                    <li>Are you Vegetarian? 
+                        <ul>
+                            <li>Yes<input type="radio" name="veg" /></li>
+                            <li>No<input type="radio" name="veg" /></li>
+                        </ul>
+                    </li>
+                    <li>Would you like only Gluten-free options?
+                        <ul>
+                            <li>Yes<input type="radio" name="gluten" /> </li>
+                            <li>No<input type="radio" name="gluten" /></li>
+                        </ul>
+                    </li>
+                    <li>Would you prefer only organic products?
+                        <ul>
+                            <li>Yes<input type="radio" name="organic"/></li>
+                            <li>No<input type="radio" name="organic"/></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a onclick="openPage('Offering', this, 'blue')"><button type="button" onclick="populateList()">Next</button></a>
+        </form>
+    </div>
+
+    <div id="Offering" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+
+        <button class="accordion" onclick="accordionClick(0)">Vegetables</button>
+        <div class="panel" id="veg">
+             
+        </div>
+
+        <button class="accordion" onclick="accordionClick(1)">Fruits</button>
+        <div class="panel" id="fruit">
+             
+        </div>
+
+        <button class="accordion" onclick="accordionClick(2)">Meats</button>
+        <div class="panel" id="meat">
+             
+        </div>
+
+        <button class="accordion" onclick="accordionClick(3)">Sea Food</button>
+        <div class="panel" id="sea">
+             
+        </div>
+
+        <button class="accordion" onclick="accordionClick(4)">Dairy</button>
+        <div class="panel" id="dairy">
+             
+        </div>
+
+        <button class="accordion" onclick="accordionClick(5)">Bakery</button>
+        <div class="panel" id="bakery">
+             
+        </div>
+
+        <button class="accordion" onclick="accordionClick(6)">Spices</button>
+        <div class="panel" id="spice">
+             
+        </div>
+
+        <button class="accordion" onclick="accordionClick(7)">Packaged Products</button>
+        <div class="panel" id="pack">
+             
+        </div>
+        <a onclick="openPage('Cart', this, 'blue')"><button type="button" onclick="fillCart()">Next</button></a>
+    </div>
+
+    <div id="Cart" class="tabcontent">
+        <h3>About</h3>
+        <p>Who we are and what we do.</p>
+    </div>
+    <footer>
+        Website by Sirjan Rekhi - 300019180
+    </footer>
+    <script src="main.js"></script>
+    <script src="groceries.js"></script>
+</body>
+
+</html>
