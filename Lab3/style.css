@@ -93,3 +93,12 @@ body, html {
       color: #444;
       font-size: large;
   }
+  footer{
+    background-color: #2d302e;
+    height: 5vh;
+    text-align: center;
+    padding: 1% 0 1% 0;
+    color: #ccc;
+    font-weight: 500;
+    width: 100%;
+  }

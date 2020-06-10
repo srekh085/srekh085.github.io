@@ -36,7 +36,12 @@ var products = [
         tags: ["Organic", "Gluten-Free", "Vegetarian"],
         price: 3.50
     },
-
+    {
+        name: "Milk",
+        type: "Dairy",
+        tags: ["Organic", "Gluten-Free"],
+        price: 4.49
+    },
     {
         name: "Pepper",
         type: "Spice",
@@ -81,9 +86,9 @@ var products = [
         price: 8.00
     },
     {
-        name: "Prepared Salad",
-        type: "Prepared Foods",
-        tags: ["Vegetarian", "Gluten-Free"],
+        name: "Salad",
+        type: "Packaged",
+        tags: ["Vegetarian", "Gluten-Free", "Organic"],
         price: 8.00
     },
     {
@@ -117,12 +122,6 @@ var products = [
         type: "Packaged",
         tags: [],
         price: 12.00
-    },
-    {
-        name: "Milk 10L",
-        type: "Dairy",
-        tags: ["Organic", "Gluten-Free"],
-        price: 16.00
     },
     {
         name: "Prawns",
