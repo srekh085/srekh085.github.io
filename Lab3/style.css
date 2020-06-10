@@ -21,13 +21,11 @@ body, html {
   .tablink:hover {
     background-color: #777;
   }
-  
   /* Style the tab content (and add height:100% for full page content) */
   .tabcontent {
     display: none;
     padding: 5%;
-    height: 50%;
-    overflow-y: scroll;
+    height: auto;
   }
 
   /*Accordion *****************************
@@ -91,14 +89,14 @@ body, html {
   }
   footer{
     background-color: black;
-    height: 5vh;
+    height: 5%;
     text-align: center;
     padding: 1% 0 1% 0;
     color: white;
     font-weight: 500;
     width: 100%;
     bottom: 0;
-    position: absolute;
+    position: fixed;
     }
   header{
     height: auto;
