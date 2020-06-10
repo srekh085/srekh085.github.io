@@ -282,12 +282,11 @@ function fillCart() {
     for (j = 0; j < finalCart.length; j += 1) {
         let product=finalCart[j];
         div.innerHTML = div.innerHTML + `
-    <div class="finalCart">
     <div class="card">
           <img src="Images/${product.name}.jpg"><br>
           ${product.name}<br>
           $${product.price}<br>
-    </finalCart>
+    </div>
     `
     }
     var total=0;
