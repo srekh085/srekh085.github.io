@@ -13,11 +13,11 @@ header {
   align-items: center;
 }
 #mainNav{
-  padding-bottom: 0;
+  padding-bottom: 1%;
 }
 #mainNav ul{
   font-weight: 700;
-  box-shadow: 0 3px 10px 0 rgb(45, 48, 46, 0.15);
+  /* box-shadow: 0 3px 10px 0 rgb(45, 48, 46, 0.15); */
 }
 #mainNav a:hover{
   color: white;
@@ -33,16 +33,37 @@ header {
 section {
   padding: 150px 0;
 }
+#services{
+  background-color: #BAC964;
+}
+#services .heading{
+  margin-left: 20px;
+}
+.carousel-item .text{
+  background: rgba(0,0,0,0.5);
+  color: white;
+}
+.carousel-item{
+  height: 80vh;
+}
+.carousel-item img{
+  height: 100%;
+  width: 100%;
+
+}
 #about{
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('coverAbout.jpg');
   background-size: cover;
   height: 100vh;
 }
 #about .textboi{
-  background-color: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) );
+  /* background-color: linear-gradient( rgba(255, 255, 255, 0.8)); */
   color: white;
 }
+#team{
+  background-color: #F7FBE1;
+}
 footer{
-  background-color:#1f431c;
+  background-color:#184D47;
   color: white;
 }
