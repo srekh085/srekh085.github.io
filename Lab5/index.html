@@ -251,13 +251,24 @@
                 </div>
                 <div class="form-group ">
                   <label class="control-label " for="subject">
-                    Subject
+                    Choose reason of visit: 
+                    <span class="asteriskField">
+                      *
+                    </span>
+                    <br><br><br>
                   </label>
-                  <input class="form-control" id="subject" name="subject" type="text" />
+                  <select name="subject" size="3" id="subject" class="text" style="font-weight: 300;">
+                    <option value="Repair">Repair/Parts (Jonathan Joestar)</option>
+                    <option value="Service">Customer Service (Joeseph Joestar)</option>
+                    <option value="Commerce">Commercial Inquiries (Jotaro Kujo)</option>
+                </select>
                 </div>
                 <div class="form-group ">
                   <label class="control-label " for="dateTimeInput">
-                    Preferred Date and Time we should Contact you:
+                    Available slots for selected person:
+                    <span class="asteriskField">
+                      *
+                    </span>
                   </label>
                   <input class="form-control" type="datetime-local" value="" id="dateTimeInput">
                 </div>
@@ -265,27 +276,28 @@
                   <label class="control-label " for="message">
                     Message
                   </label>
-                  <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+                  <textarea class="form-control" cols="20" id="message" name="message" rows="4"></textarea>
                 </div>
                 <div class="form-group">
                   <div>
                     <button class="btn btn-custom " name="submit" type="submit">
-                      Submit
+                      Book!
                     </button>
                   </div>
                 </div>
               </form>
             </div>
             <div class="col-lg-6">
-              <h2>Contact Us!</h2>
-              <p class="lead">Let us know your questions, and a representative will call or email you.
+              <h2>Book a Service!</h2>
+              <p class="lead">Let us know the service you need, and the professional you would like to book it with.
               </p>
-              <p class="lead">You can also call us anytime at +442072243688.
+              <p class="lead">We require your Credit Card information to book a service. A $15 fee will be applied in case of a no-show. 
+                You can cancel by calling +442072243688 to avoid charges.
               </p>
               <p class="lead">
                 We are located at <a
                   href="https://www.google.com/maps/place/The+Sherlock+Holmes+Museum/@51.523767,-0.1607444,17z/data=!3m1!4b1!4m5!3m4!1s0x48761acf335de791:0xfcd227d9a53748f3!8m2!3d51.523767!4d-0.1585557">221b
-                  Baker St, Marylebone, London NW1 6XE, United Kingdom</a>
+                  221 Baker St, Marylebone, London</a>
               </p>
             </div>
           </div>
@@ -295,7 +307,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-5">
+  <footer class="py-3">
     <div class="container">
       <p class="m-0 text-center text-white"> Made By Sirjan Rekhi - 300019180</p>
     </div>
