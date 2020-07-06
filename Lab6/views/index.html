@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <!--bootstrap, jquery-->
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!--css-->
+        
+        <link rel="stylesheet" type="text/css" href="../public/styles/style.css">
+    	
+		<title>
+		    Lab 6: Survey Results
+		</title>
+	</head>
+
+	<body>
+        <header class="header">
+            <a href="https://www.ign.com/ca"><img src="../public/styles/images/transparent_logo_ign.png" class="image"></a>
+        </header>
+        <div class="container">
+            <p class="title">Help us improve your Experience!</p>
+            <div class="imageblock">
+                            <a href="https://www.ign.com/ca"><img src="../public/styles/images/home_ign.png" class="image screenshot"></a>
+            </div>
+            <div class="formContainer">
+                <form name="lab1_form" id="surveyForm" method= "POST" action="/">
+                    <div class="section">
+                        <p class="form-text" class="formText">How would you rate the information organization on the homepage? (In picture)</p>
+                            <ul class="likert">
+                                <li>Bad Organization</li>
+                                <li><input type="radio" name="organization" value="1" /></li>
+                                <li><input type="radio" name="organization" value="2" /></li>
+                                <li><input type="radio" name="organization" value="3" /></li>
+                                <li><input type="radio" name="organization" value="4" /></li>
+                                <li><input type="radio" name="organization" value="5" /></li>
+                                <li>Efficient Organizaion</li>
+                            </ul>
+                    </div>
+                    
+                     <div class="section">
+                        <label for="sel1" class="formText">What do you spend most of your time on?</label><br>
+                        <select name="mostUsed" size="1" id="sel1" class="text" style="font-size: 2vh;">
+                            <option value="Games">Games</option>
+                            <option value="Movies">Movies</option>
+                            <option value="Shows">Shows</option>
+                            <option value="Technology">Technology</option>
+                        </select>
+                    </div>
+                    
+                    <div class="section">
+                        <label for="selMult" class="formText">What do you visit IGN to get news for?</label><br>
+                        <input type="checkbox" id="opt1" name="newsFor" value="Games">
+                        <label for="opt1" style="font-weight: 300;">Games</label><br>
+                        <input type="checkbox" id="opt2" name="newsFor" value="Movies">
+                        <label for="opt2" style="font-weight: 300;">Movies</label><br>
+                        <input type="checkbox" id="opt2" name="newsFor" value="Shows">
+                        <label for="opt3" style="font-weight: 300;">Shows</label><br>
+                        <input type="checkbox" id="opt4" name="newsFor" value="Technology">
+                        <label for="opt4" style="font-weight: 300;">Technology</label><br>
+                    </div>
+                    
+                    <div class="section">
+                        <label for="na">Your Name: </label>
+                        <input class="text" type="text" id="na" name="name">
+                    </div>
+                    
+                    <div class="section">
+                        <p class="form-text">What is your Gender?</p>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male" style="font-weight: 300;">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female" style="font-weight: 300;">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other" style="font-weight: 300;">Other</label>
+                    </div>        
+                    
+                    <div class="section">
+                        <label for="commentBox">Additional Comments:</label><br>
+                        <textarea id="commentBox" class="text" name="comments"></textarea>
+                    </div>
+                    
+                    <div class="section" style="text-align: center;">
+                        <input type="submit" class="btn btn-primary" value="SUBMIT" id="sid">
+                        <p id="afterSubmit">Thank You for Submitting!</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+                <a href="https://www.ign.com/ca"><img src="../public/styles/images/transparent_logo_ign.png" class="image"></a>
+                <p class="nametag">Sirjan Rekhi (Student ID: 300019180)</p>
+        </footer>
+
+    <!-- Form submission script -->
+    <script src="public/action.js"></script>
+    <!--  -->
+
+    </body>
+</html>

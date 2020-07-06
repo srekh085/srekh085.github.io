@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Analysis Results</title>
+    </head>
+
+    <body style="background-color: #2d302e ; 
+                font-family: sans-serif; color: #F6F6F8">
+        <h1 style="text-align: center; color: #F6F6F8">Survey Results</h1>
+        <hr>
+
+        <h2>User Info</h2>
+        <h3>Name:</h3>
+        <ul style="list-style: none;">
+            <% for (var i=0; i<results[0].length; i++){ %>
+                <li><%= results[0][i].name %> :  <%= results[0][i].count %></li>
+            <% } %>    
+        </ul>
+        <h3>Gender</h3>
+        <ul style="list-style: none;">
+            <% for (var i=0; i<results[1].length; i++){ %>
+                <li><%= results[1][i].gender %> :  <%= results[1][i].count %></li>
+            <% } %>    
+        </ul>
+        <h3>Opinion about Organization on Homepage (Rating out of 5):</h3>
+        <ul style="list-style: none;">
+            <% for (var i=0; i<results[2].length; i++){ %>
+                <li><%= results[2][i].organization %> :  <%= results[2][i].count %></li>
+            <% } %>    
+        </ul>
+        <hr>
+            
+        <h2>Content consumed most by Users</h2>
+        <ul style="list-style: none;">
+            <% for (var i=0; i<results[3].length; i++){ %>
+                <li><%= results[3][i].mostUsed %> :  <%= results[3][i].count %></li>
+            <% } %>    
+        </ul>
+        <hr>
+
+       
+        <h2>IGN is User's main source of:</h2>
+        <ul style="list-style: none;">
+            <% for (var i=0; i<results[4].length; i++){ %>
+                <li><%= results[4][i].newsFor %> :  <%= results[4][i].count %></li>
+            <% } %>    
+        </ul>
+        <hr>
+
+        <h2>Additional Commets from Users:</h2>
+        <ul style="list-style: none;">
+            <% for (var i=0; i<results[5].length; i++){ %>
+                <li><%= results[5][i].comments %> :  <%= results[5][i].count %></li>
+            <% } %>    
+        </ul>
+        <hr>
+
+    </body>
+
+    <footer style="text-align: center; background-color: #2d302e; color: #F6F6F8; width: 100%; bottom:0;">
+        <p2>Sirjan Rekhi - 300019180</p2> 
+    </footer>
+</html>

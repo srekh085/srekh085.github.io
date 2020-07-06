@@ -1,0 +1,88 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+}
+.header{
+    height: 20vh;
+    width: 100%; 
+    text-align: center;
+    background-color: #2d302e;
+}
+.image{
+    height: 100%;
+    width: auto;
+}
+.screenshot{
+    width:100%;
+}
+.title{
+    font-weight: 700;
+    font-size: 4vh;
+    padding: 2%;
+}
+.container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #F6F6F8;
+    color: #2d302e;
+}
+.imageblock{
+    height: 60%;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px 0 rgb(45, 48, 46, 0.15);
+}
+.formContainer{
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+.form{
+    font-size: 3vh;
+    font-weight: 700;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+}
+.section{
+    padding: 2% 0 2% 0;
+}
+.footer{
+    background-color: #2d302e;
+    height: 10vh;
+    text-align: center;
+    padding: 1% 0 1% 0;
+    width: 100%;
+}
+.footer .image{
+    height: 50%;
+    width: auto;
+    margin: 0;
+}
+.nametag{
+    color: white;
+    margin: 1% 0 0 0;
+    font-weight: 400;
+    font-size: 2vh;
+}
+.likert{
+    list-style: none;
+    text-align: center;
+    padding-top: 1%;
+}
+.likert li{
+    display: inline;
+}
+textarea{
+    height: 10%;
+    width: 100%;
+}
+.text{
+    font-size: 3vh;
+    font-weight: 400;
+}
+#afterSubmit{
+    display: none;
+}
